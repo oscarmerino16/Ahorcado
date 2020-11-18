@@ -18,11 +18,37 @@ public class parte_1 {
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
 			System.out.println("|________________");
 			break;
 		case 4:
-			System.out.println("__________");
-			System.out.println("|        |");
+			System.out.println("__________________");
+			System.out.println("|                 |");
+			System.out.println("|                 |");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
@@ -33,9 +59,22 @@ public class parte_1 {
 			break;
 		case 3:
 			
-			System.out.println("__________");
-			System.out.println("|        |");
-			System.out.println("|        0");
+			System.out.println("__________________");
+			System.out.println("|                 |");
+			System.out.println("|                 |");
+			System.out.println("|          |--------------|");
+			System.out.println("|          |   0     0    |");
+			System.out.println("|          |      N       |");
+			System.out.println("|          |   ________   |");
+			System.out.println("|          |              |");
+			System.out.println("|          |--------------|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
+			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
@@ -44,37 +83,76 @@ public class parte_1 {
 			System.out.println("|________________");
 			break;
 		case 2:
-			System.out.println("__________");
-			System.out.println("|        |");
-			System.out.println("|        0");
-			System.out.println("|        |");
-			System.out.println("|        |");
-			System.out.println("|        |");
+			System.out.println("__________________");
+			System.out.println("|                 |");
+			System.out.println("|                 |");
+			System.out.println("|          |--------------|");
+			System.out.println("|          |   0     0    |");
+			System.out.println("|          |      N       |");
+			System.out.println("|          |   ________   |");
+			System.out.println("|          |              |");
+			System.out.println("|          |--------------|");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|________________");
 			
 			break;
 		case 1:
-			System.out.println("__________");
-			System.out.println("|        |");
-			System.out.println("|        0");
-			System.out.println("|      /\\| /");
-			System.out.println("|        |");
-			System.out.println("|        |");
+			System.out.println("__________________");
+			System.out.println("|                 |");
+			System.out.println("|                 |");
+			System.out.println("|          |--------------|");
+			System.out.println("|          |   X     0    |");
+			System.out.println("|          |      N       |");
+			System.out.println("|          |   ________   |");
+			System.out.println("|          |              |");
+			System.out.println("|          |--------------|");
+			System.out.println("|                  |");
+			System.out.println("|               \\  |  /");
+			System.out.println("|                \\ | /");
+			System.out.println("|                 \\|/");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|");
 			System.out.println("|________________");
 			break;
 		case 0:
-			System.out.println("__________");
-			System.out.println("|        |");
-			System.out.println("|        0");
-			System.out.println("|     /\\ | /");
-			System.out.println("|        |");
-			System.out.println("|        |");
-			System.out.println("|       / \\ ");
-			System.out.println("|");
+			System.out.println("__________________");
+			System.out.println("|                 |");
+			System.out.println("|                 |");
+			System.out.println("|          |--------------|");
+			System.out.println("|          |   X     x    |");
+			System.out.println("|          |      N       |");
+			System.out.println("|          |   ________   |");
+			System.out.println("|          |              |");
+			System.out.println("|          |--------------|");
+			System.out.println("|                  |");
+			System.out.println("|               \\  |  /");
+			System.out.println("|                \\ | /");
+			System.out.println("|                 \\|/");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                  |");
+			System.out.println("|                 / \\");
+			System.out.println("|                /   \\");
+			System.out.println("|               /     \\");
 			System.out.println("|________________");
 			break;
 				
@@ -96,15 +174,71 @@ public class parte_1 {
 		
 		for (int i = 0; i < vFallos.length; i++) {
 			
-			vFallos[i]= "_ ";
+			vFallos[i]= "_";
 		}
 		for (int i = 0; i < vPalabra.length; i++) {
 			
-			vAciertos[i]= "_ ";
-			vPalabra[i]= "palabra.substring(i,i+1)";
+			vPalabra[i]= palabra.substring(i,i+1);
+			vAciertos[i]= "_";
 		}
 	
 	}
+	
+	public static void dibujarAciertorErrores(String vFallos[], String vAciertos[]) {
+		
+		//Imprimir los fallos
+		System.out.println("Fallos cometidos:");
+		for (int i = 0; i < vFallos.length; i++) {
+			if (!vFallos[i].equals("_")) {
+				System.out.print(vFallos[i] + " ");
+			}
+		}
+		
+		//System.out.println("");
+		System.out.println("\n¡Palabra Secreta!");
+		//Imprimir los aciertos
+		for (int i = 0; i < vAciertos.length; i++) {
+			System.out.print(vAciertos[i]+ " ");
+		}
+	}
+	
+	
+	public static int comprobarLetraIntroducida(int vidas, String letra, String vPalabra[], String vAciertos[],
+					String vFallos[]) {
+				boolean encontrado=false;
+				for (int i = 0; i < vPalabra.length; i++) {
+					if (letra.equalsIgnoreCase(vPalabra[i])) {
+						vAciertos[i]=letra;
+						encontrado=true;
+						
+					}
+					
+				}
+
+				if (encontrado == false) {
+					for (int i = 0; i < vFallos.length; i++) {
+						if (vFallos[i].equals("_")) {
+							vFallos[i]=letra;
+							vidas --;
+							break;
+						}
+					}
+				}
+				
+				
+				return vidas;
+			}
+	
+	public static boolean heGanado(String vAciertos[]) {
+		
+		for (int i = 0; i < vAciertos.length; i++) {
+			if (vAciertos[i].equals("_")) {
+				return false;
+			}
+		}
+		return true;
+		
+	} 
 	
 	public static void main(String[] args) {
 		// vidas totales 7
@@ -115,7 +249,9 @@ public class parte_1 {
 		String vPalabra[], vAciertos[], vFallos[];
 		vPalabra= new String[palabra.length()];
 		vAciertos= new String[palabra.length()];
-		vFallos= new String[vidas];
+		vFallos= new String[vidas+1];
+		inicializarVectores(palabra, vPalabra, vAciertos, vFallos);
+		
 		Scanner leer = new Scanner(System.in);
 		
 		do {
@@ -125,15 +261,17 @@ public class parte_1 {
 		
 			
 				
-			
+			//comprobarLetraIntroducida(letra,vPalabra, vAciertos, vFallos);
+			vidas = comprobarLetraIntroducida(vidas, letra,vPalabra, vAciertos, vFallos);
 			
 			
 			
 			dibujarMuneco(vidas);
 			
+			dibujarAciertorErrores(vFallos, vAciertos);
 			
-			//vidas--;
-		} while (vidas>=0);
+			
+		} while (vidas>=0 && heGanado(vAciertos)==false);
 
 	}
 
