@@ -161,15 +161,6 @@ public class parte_1 {
 		
 	}
 	
-	
-	public static boolean comprobarLetra(String vPalabra[], String letra, String vAciertos[]) {
-		boolean encontrado=false;
-		
-
-		
-		return encontrado;
-	}
-	
 	public static  void inicializarVectores(String palabra,String vPalabra[], String vAciertos[], String vFallos[]) {
 		
 		for (int i = 0; i < vFallos.length; i++) {
@@ -244,7 +235,7 @@ public class parte_1 {
 		// vidas totales 7
 		
 		int vidas=7;
-		String palabra="Futbol";
+		String palabra="gilipollas";
 		String letra="";
 		String vPalabra[], vAciertos[], vFallos[];
 		vPalabra= new String[palabra.length()];
@@ -255,7 +246,7 @@ public class parte_1 {
 		Scanner leer = new Scanner(System.in);
 		
 		do {
-			System.out.println("Dime una letra haber si esta en la palabra");
+			System.out.println("Dime una letra a ver si esta en la palabra");
 			letra= leer.next();
 			
 		
