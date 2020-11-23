@@ -13,6 +13,27 @@ public class Agenda {
         }
 	}
 	
+	public static void eliminarContacto(String mContactos[][]) {
+		Scanner leer = new Scanner(System.in);
+	
+		for (int i = 0; i < mContactos.length; i++) {
+            System.out.println("¿Que usuario quieres eliminar?");
+            mContactos[i][0]= leer.next();
+            if (mContactos[i][0].equalsIgnoreCase(mContactos[i][0])) {
+				mContactos[i][0]="";
+				mContactos[i][1]="";
+            }
+            
+			if (!mContactos[i][0].equalsIgnoreCase(mContactos[i][0])) {
+				System.out.println("Ese usuario no existe");
+				
+			}
+			break;
+        }
+		
+		
+		
+	}
 	public static void verContacto(String mContactos[][]) {
 		Scanner leer = new Scanner(System.in);
 		
@@ -66,7 +87,7 @@ public class Agenda {
 				verContacto(mContactos);
 				break;
 			case 3:
-		
+				eliminarContacto(mContactos);
 				break;
 			case 4:
 		
