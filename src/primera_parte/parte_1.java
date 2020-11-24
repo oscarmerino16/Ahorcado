@@ -6,7 +6,7 @@ public class parte_1 {
 
 	public static void dibujarMuneco(int vidas) {
 
-		
+		//Segun numero de vidas dibujar muñeco
 		switch (vidas) {
 		case 6:
 			System.out.println("________________");
@@ -162,7 +162,7 @@ public class parte_1 {
 	}
 	
 	public static  void inicializarVectores(String palabra,String vPalabra[], String vAciertos[], String vFallos[]) {
-		
+		// Inizializar los vectores
 		for (int i = 0; i < vFallos.length; i++) {
 			
 			vFallos[i]= "_";
@@ -185,14 +185,13 @@ public class parte_1 {
 			}
 		}
 		
-		//System.out.println("");
+		
 		System.out.println("\n¡Palabra Secreta!");
 		//Imprimir los aciertos
 		for (int i = 0; i < vAciertos.length; i++) {
 			System.out.print(vAciertos[i]+ " ");
 		}
 	}
-	
 	
 	public static int comprobarLetraIntroducida(int vidas, String letra, String vPalabra[], String vAciertos[],
 					String vFallos[]) {
@@ -221,21 +220,23 @@ public class parte_1 {
 			}
 	
 	public static boolean heGanado(String vAciertos[]) {
-		
+		//Comprobar si hemos gandado
 		for (int i = 0; i < vAciertos.length; i++) {
 			if (vAciertos[i].equals("_")) {
+
 				return false;
 			}
 		}
-		return true;
 		
+		System.out.println("\n Muy bien has acertado la palabra");
+		return true;
 	} 
 	
 	public static void main(String[] args) {
 		// vidas totales 7
 		
 		int vidas=7;
-		String palabra="gilipollas";
+		String palabra="futbol";
 		String letra="";
 		String vPalabra[], vAciertos[], vFallos[];
 		vPalabra= new String[palabra.length()];
@@ -248,21 +249,16 @@ public class parte_1 {
 		do {
 			System.out.println("Dime una letra a ver si esta en la palabra");
 			letra= leer.next();
-			
 		
-			
-				
 			//comprobarLetraIntroducida(letra,vPalabra, vAciertos, vFallos);
 			vidas = comprobarLetraIntroducida(vidas, letra,vPalabra, vAciertos, vFallos);
-			
-			
 			
 			dibujarMuneco(vidas);
 			
 			dibujarAciertorErrores(vFallos, vAciertos);
 			
 			
-		} while (vidas>=0 && heGanado(vAciertos)==false);
+		} while (vidas>0 && heGanado(vAciertos)==false);
 
 	}
 
