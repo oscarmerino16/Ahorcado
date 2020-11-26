@@ -1,5 +1,6 @@
 package primera_parte;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class parte_1 {
@@ -232,11 +233,25 @@ public class parte_1 {
 		return true;
 	} 
 	
+	public static String generarPalabra() {
+		//generar palabra aleatoria
+		String palabra;
+		int num;
+		
+		String vPalabra[]={"hola", "adios", "baloncesto", "teclado", "blanco", "ciudad", "tres", "futbol", "pepe", "joseluis"};
+		
+		 Random r = new Random();
+	     num = r.nextInt(vPalabra.length);
+	     palabra = vPalabra[num];
+	
+		 return palabra;
+	}
+	
 	public static void main(String[] args) {
 		// vidas totales 7
 		
 		int vidas=7;
-		String palabra="futbol";
+		String palabra=generarPalabra();
 		String letra="";
 		String vPalabra[], vAciertos[], vFallos[];
 		vPalabra= new String[palabra.length()];

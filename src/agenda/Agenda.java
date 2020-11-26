@@ -16,23 +16,30 @@ public class Agenda {
 	public static void eliminarContacto(String mContactos[][]) {
 		Scanner leer = new Scanner(System.in);
 		String eliminar="";
+		int pos;
 		System.out.println("�Que usuario quieres eliminar?");
         eliminar= leer.next();
-		for (int i = 0; i < mContactos.length; i++) {
- 
-            if ((mContactos[i][0].equalsIgnoreCase(eliminar)) || (mContactos[i][1].equalsIgnoreCase(eliminar))) {
-				mContactos[i][0]="";
-				mContactos[i][1]="";
-            }
+        pos=buscar(mContactos,eliminar);
+        
+        if (pos == -1) {
+            System.out.println("El contacto no esta");
+        }else {
+        	 if ((mContactos[pos][0].equalsIgnoreCase(eliminar)) || (mContactos[pos][1].equalsIgnoreCase(eliminar))) {
+ 				mContactos[pos][0]="";
+ 				mContactos[pos][1]="";
+             }
         }
-		
-	}
+        
+          
+		}
 	
 	public static void verContacto(String mContactos[][]) {
 		Scanner leer = new Scanner(System.in);
 		
 		for (int i = 0; i < mContactos.length; i++) {
-            System.out.println("El nombre del contacto es " + mContactos[i][0] + " y su telefono es " + mContactos[i][1]);
+			if (!mContactos[i][0].equalsIgnoreCase("")) {
+				 System.out.println("El nombre del contacto es " + mContactos[i][0] + " y su telefono es " + mContactos[i][1]);
+			}
         }
 		}
 	
@@ -53,20 +60,28 @@ public class Agenda {
 		Scanner leer = new Scanner(System.in);
 		
 		String editar="", editnom="", edittel="";
+		int pos;
 		System.out.println("�Que usuario quieres editar?");
         editar= leer.next();
         
-        for (int i = 0; i < mContactos.length; i++) {
-        		
-			if (mContactos[i][0].equalsIgnoreCase(editar) || mContactos[i][1].equalsIgnoreCase(editar)) {
-				System.out.println("Que nombre quieres ponerle");
-				editnom= leer.next();
-				mContactos[i][0]= editnom;
-				System.out.println("Que telefono quieres ponerle");
-				edittel= leer.next();
-				mContactos[i][1]= edittel;
-				
-			}
+        pos=buscar(mContactos, editar);
+        
+        if (pos == -1) {
+            System.out.println("El contacto no esta");
+        } else {
+            System.out.println("Que quieres editar su nombre o telefono");
+            editar = leer.next();
+            if (editar.equalsIgnoreCase("Telefono")) {
+                System.out.println("Que numero de telefono quieres ponerle");
+                edittel = leer.next();
+                mContactos[pos][1] = edittel;
+            }
+            if (editar.equalsIgnoreCase("nombre")) {
+                System.out.println("Que nombre quieres ponerle");
+                editnom = leer.next();
+                mContactos[pos][0] = editnom;
+
+            }
 		}
 		
 	}
@@ -88,11 +103,22 @@ public class Agenda {
 		}
 	}
 	
+	public static int buscar(String mContactos[][], String busqueda) {
+
+        for (int i = 0; i < mContactos.length; i++) {
+            if (mContactos[i][0].equalsIgnoreCase(busqueda) || mContactos[i][1].equalsIgnoreCase(busqueda)) {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+	
 	public static void main(String[] args) {
 		
 		Scanner leer = new Scanner(System.in);
 
-		int num = 0, columna=2, fila=0;
+		int num = 0, columna=2, fila=0, busqueda=0;
 	
 		System.out.println("Dime el numero de filas que quieres");
 		fila= leer.nextInt();
