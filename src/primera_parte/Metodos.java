@@ -3,7 +3,7 @@ package primera_parte;
 import java.util.Random;
 import java.util.Scanner;
 
-public class parte_1 {
+public class Metodos {
 
 	public static void dibujarMuneco(int vidas) {
 
@@ -247,34 +247,8 @@ public class parte_1 {
 		 return palabra;
 	}
 	
-	public static void main(String[] args) {
-		// vidas totales 7
-		
-		int vidas=7;
-		String palabra=generarPalabra();
-		String letra="";
-		String vPalabra[], vAciertos[], vFallos[];
-		vPalabra= new String[palabra.length()];
-		vAciertos= new String[palabra.length()];
-		vFallos= new String[vidas+1];
-		inicializarVectores(palabra, vPalabra, vAciertos, vFallos);
-		
-		Scanner leer = new Scanner(System.in);
-		
-		do {
-			System.out.println("Dime una letra a ver si esta en la palabra");
-			letra= leer.next();
-		
-			//comprobarLetraIntroducida(letra,vPalabra, vAciertos, vFallos);
-			vidas = comprobarLetraIntroducida(vidas, letra,vPalabra, vAciertos, vFallos);
-			
-			dibujarMuneco(vidas);
-			
-			dibujarAciertorErrores(vFallos, vAciertos);
-			
-			
-		} while (vidas>0 && heGanado(vAciertos)==false);
-
-	}
+	
 
 }
+	
+

@@ -104,7 +104,7 @@ public class Agenda {
 	}
 	
 	public static int buscar(String mContactos[][], String busqueda) {
-
+		//buscar posicion
         for (int i = 0; i < mContactos.length; i++) {
             if (mContactos[i][0].equalsIgnoreCase(busqueda) || mContactos[i][1].equalsIgnoreCase(busqueda)) {
                 return i;
@@ -139,7 +139,7 @@ public class Agenda {
 			
 			switch (num) {
 			case 1:
-					nuevoContacto(mContactos);
+				nuevoContacto(mContactos);
 				break;
 			case 2:
 				verContacto(mContactos);
